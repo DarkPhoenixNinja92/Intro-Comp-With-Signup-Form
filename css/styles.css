@@ -2,4 +2,81 @@ body {
     background-image: url("../images/bg-intro-mobile.png");
     background-color: hsl(0, 100%, 74%);
     color: #fff;
+    padding: 1.6rem 0 2.5rem 0;
+}
+
+.container,
+.opening,
+.trial,
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opening,
+.signup p,
+.trial {
+    text-align: center;
+}
+
+.intro-para {
+    width: 75%;
+    margin-bottom: 5rem;
+}
+
+.trial {
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    padding: 0 2.8rem 0 2.8rem;
+}
+
+.trial span {
+    font-weight: bold;
+}
+
+.signup {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.signup p {
+    width: 85%;
+}
+
+.terms,
+.form-in {
+    color: hsl(249, 10%, 26%);
+}
+
+.form-in {
+    margin-bottom: 0.7rem;
+}
+
+.name-first,
+.name-last,
+.input-email,
+.input-password,
+.form-claim {
+    padding: 0.6rem 5rem;
+}
+
+.form-claim {
+    text-transform: uppercase;
+    padding: 0.7rem 5.2rem;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+}
+
+.terms {
+    position: relative;
+    left: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
 }
