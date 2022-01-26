@@ -5,6 +5,39 @@ body {
     padding: 1.6rem 0 2.5rem 0;
 }
 
+.error-firstname,
+.error-lastname,
+.error-email,
+.error-pass {
+    position: relative;
+    left: 7.5rem;
+    top: 1.95rem;
+}
+
+.error-firstname {
+    top: 6.4rem;
+}
+
+.error-lastname {
+    top: 8rem;
+}
+
+.error-email {
+    top: 9.58rem;
+}
+
+.error-pass {
+    top: 11.2rem;
+}
+
+.show {
+    display: inherit;
+}
+
+.hide {
+    display: none;
+}
+
 .container,
 .opening,
 .trial,
@@ -79,4 +112,30 @@ form {
 a {
     text-decoration: none;
     color: hsl(0, 100%, 74%);
+}
+
+@media(min-width: 1440px) {
+    .container {
+        flex-direction: row;
+    }
+    .opening {
+        position: relative;
+        top: 5rem;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .title {
+        width: 35%;
+    }
+    .intro-para {
+        width: 45%;
+        text-align: left;
+    }
+    .lower {
+        position: relative;
+        right: 7rem;
+        top: 4rem;
+        justify-content: center;
+        align-items: center;
+    }
 }
