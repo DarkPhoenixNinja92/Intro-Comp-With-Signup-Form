@@ -12,6 +12,11 @@ const errorLastMsg = document.querySelector(".error-last-msg");
 const errorEmailMsg = document.querySelector(".error-email-msg");
 const errorPassMsg = document.querySelector(".error-pass-msg");
 
+function validateEmail(email) {
+    const res = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return res.test(String(email).toLowerCase());
+}
+
 trialClaim.addEventListener('click', function() {
     if (firstName.value === "") {
         if (errorFirst.classList[1] == "hide") {
@@ -39,7 +44,7 @@ trialClaim.addEventListener('click', function() {
         errorLastMsg.classList.add("hide");
         errorLastMsg.classList.remove("show");
     }
-    if (email.value === "") {
+    if (!validateEmail(email)) {
         if (errorMail.classList[1] == "hide") {
             errorMail.classList.toggle("hide");
             errorMail.classList.toggle("show");
@@ -47,6 +52,7 @@ trialClaim.addEventListener('click', function() {
             errorEmailMsg.classList.toggle("show");
         }
     } else {
+        alert("Valid!");
         errorMail.classList.add("hide");
         errorMail.classList.remove("show");
         errorEmailMsg.classList.add("hide");
