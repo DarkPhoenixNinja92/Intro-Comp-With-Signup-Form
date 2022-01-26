@@ -19,15 +19,15 @@ body {
 }
 
 .error-lastname {
-    top: 8rem;
+    top: 11rem;
 }
 
 .error-email {
-    top: 9.58rem;
+    top: 15.7rem;
 }
 
 .error-pass {
-    top: 11.2rem;
+    top: 20.5rem;
 }
 
 .show {
@@ -36,6 +36,42 @@ body {
 
 .hide {
     display: none;
+}
+
+.firstlast-hidden-first {
+    top: 8rem;
+}
+
+.firstmail-hidden-first {
+    top: 12.7rem;
+}
+
+.firstpass-hidden-first {
+    top: 17.5rem;
+}
+
+.lastfirst-hidden-first {
+    top: 5rem;
+}
+
+.lastemail-hidden-first {
+    top: 12.6rem;
+}
+
+.lastpassword-hidden-first {
+    top: 17.5rem;
+}
+
+.emailfirst-hidden-first {
+    top: 5rem;
+}
+
+.emaillast-hidden-first {
+    top: 9.6rem;
+}
+
+.emailpass-hidden-first {
+    top: 17.4rem;
 }
 
 .container,
@@ -57,6 +93,13 @@ form {
 .intro-para {
     width: 75%;
     margin-bottom: 5rem;
+}
+
+.free {
+    width: 55%;
+    text-align: center;
+    position: relative;
+    left: 4rem;
 }
 
 .trial {
@@ -118,6 +161,15 @@ a,
     color: hsl(0, 100%, 74%);
 }
 
+.error-first-msg,
+.error-last-msg,
+.error-email-msg,
+.error-pass-msg {
+    position: relative;
+    left: 8rem;
+    bottom: 1.4rem;
+}
+
 @media(min-width: 1440px) {
     body {
         background-image: url("../images/bg-intro-desktop.png");
@@ -137,6 +189,10 @@ a,
     .intro-para {
         width: 45%;
         text-align: left;
+    }
+    .free {
+        width: 100%;
+        left: 0.4rem;
     }
     .lower {
         position: relative;
