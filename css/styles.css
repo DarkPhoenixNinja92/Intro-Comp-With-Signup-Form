@@ -109,12 +109,19 @@ form {
     left: 2rem;
 }
 
-a {
+a,
+.error-first-msg,
+.error-last-msg,
+.error-email-msg,
+.error-pass-msg {
     text-decoration: none;
     color: hsl(0, 100%, 74%);
 }
 
 @media(min-width: 1440px) {
+    body {
+        background-image: url("../images/bg-intro-desktop.png");
+    }
     .container {
         flex-direction: row;
     }
