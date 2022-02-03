@@ -44,7 +44,7 @@ trialClaim.addEventListener('click', function() {
         errorLastMsg.classList.add("hide");
         errorLastMsg.classList.remove("show");
     }
-    if (!validateEmail(email)) {
+    if (!validateEmail(email.value)) {
         if (errorMail.classList[1] == "hide") {
             errorMail.classList.toggle("hide");
             errorMail.classList.toggle("show");
@@ -52,7 +52,6 @@ trialClaim.addEventListener('click', function() {
             errorEmailMsg.classList.toggle("show");
         }
     } else {
-        alert("Valid!");
         errorMail.classList.add("hide");
         errorMail.classList.remove("show");
         errorEmailMsg.classList.add("hide");
